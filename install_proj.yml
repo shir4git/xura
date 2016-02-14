@@ -10,7 +10,7 @@
       become: yes
       become_method: sudo
       yum: name=docker state=latest
-
+#adding to check revision
     - name: Clone Pet-Clinic
       git: repo=https://github.com/shir4git/spring-petclinic.git dest=~/Proj/Pet-Clinic
 
